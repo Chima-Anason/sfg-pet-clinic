@@ -1,14 +1,10 @@
 package com.anagracetech.sfgpetclinic.services;
 
+import com.anagracetech.sfgpetclinic.model.Owner;
 import com.anagracetech.sfgpetclinic.model.Pet;
 
 import java.util.Set;
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long>{
 
-    Pet findById(Long id);
-
-    Pet save(Pet pet);
-
-    Set<Pet> findAll();
 }
